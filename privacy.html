@@ -1,30 +1,28 @@
 <!doctype html><html lang="en"><head><title>Hum — Privacy Policy</title><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<style>:root{color-scheme:dark}body{background:#0C1214;color:#E8EEEF;font-family:Inter,-apple-system,system-ui,sans-serif;line-height:1.65;max-width:680px;margin:0 auto;padding:48px 24px 96px}h1{font-size:28px;letter-spacing:-.02em}h2{font-size:19px;margin-top:36px;color:#46C8BC}p,li{color:#B9C6C9;font-size:15.5px}a{color:#46C8BC}ul{padding-left:20px}.foot{margin-top:48px;padding-top:16px;border-top:1px solid #1E2A2E;font-size:13px;color:#8CA0A5}</style></head><body><h1>Hum — Privacy Policy</h1>
-<p>**Effective:** 2026-05-04
-**Version:** 1.0</p>
-<p>This is the public privacy policy for Hum, the on-device voice memo app for iOS. The same text is available in Settings → Read the full privacy policy.</p>
-<p>---</p>
+<style>:root{color-scheme:dark}body{background:#0C1214;color:#E8EEEF;font-family:Inter,-apple-system,system-ui,sans-serif;line-height:1.65;max-width:680px;margin:0 auto;padding:48px 24px 96px}h1{font-size:28px;letter-spacing:-.02em}h2{font-size:19px;margin-top:36px;color:#46C8BC}p,li{color:#B9C6C9;font-size:15.5px}a{color:#46C8BC}ul{padding-left:20px}.meta{font-size:13px;color:#8CA0A5}.foot{margin-top:48px;padding-top:16px;border-top:1px solid #1E2A2E;font-size:13px;color:#8CA0A5}</style></head><body><h1>Hum — Privacy Policy</h1>
+<p class="meta">Effective 14 September 2026 · Version 1.1</p>
+<p>This is the public privacy policy for Hum, the on-device voice notes app for iPhone and iPad. The same text is in the app under Settings → Privacy.</p>
 <h2>Hum never receives your voice.</h2>
-<p>Hum records audio, transcribes it entirely on your iPhone (using Apple's on-device speech engine or a locally-running Whisper model), and stores everything in this app's sandbox. Hum has no servers — audio is not uploaded to Hum, to OpenAI, or to anyone else.</p>
-<p>Your recordings are included in your iPhone's own encrypted backup, so a lost or replaced phone doesn't lose them. That backup belongs to you and is managed by iOS — Hum never sees it.</p>
+<p>Hum records audio, transcribes it entirely on this device (using Apple's on-device speech engine or a locally-running Whisper model), and stores everything in this app's sandbox. Hum has no servers — audio is not uploaded to Hum, to OpenAI, or to anyone else.</p>
+<p>Your recordings are included in your device's own encrypted backup, so a lost or replaced device doesn't lose them. That backup belongs to you and is managed by iOS — Hum never sees it.</p>
 <h2>On-device model downloads</h2>
-<p>Hum downloads its on-device model files from public CDNs on first use: the Whisper transcription model (and any model you switch to in Settings), the speaker-separation model used for multi-speaker recordings, and — if you enable "Advanced on-device Minutes" — a larger open-source language model (~2.5 GB, Wi-Fi only). These transfers contain only model weights — never your audio, transcripts, or identifiers. Once downloaded, everything runs locally on the device.</p>
-<h2>Optional: Live Researcher (off by default)</h2>
-<p>If you switch on the Live Researcher in Settings and add your own Anthropic API key, then while you record, short excerpts of the live transcript are sent to Anthropic (api.anthropic.com) using your key so it can look up facts in real time. That is the one and only feature that sends any of your content off the device, it never runs unless you turn it on, and your audio itself is never sent — only recent transcript text. Anthropic's own privacy terms apply to those requests. Turn the feature off and Hum goes back to fully on-device.</p>
+<p>Hum downloads its on-device model files from public CDNs on first use: the Whisper transcription model (and any model you switch to in Settings), and — for multi-speaker recordings — the speaker-separation model. If you use the advanced on-device Minutes option, Hum also downloads that larger model (about 2 GB). Apple Intelligence downloads its own model, managed by iOS. These transfers contain only model weights — never your audio, your transcripts, or any identifiers. Once downloaded, everything runs locally on this device.</p>
 <h2>No analytics. No telemetry.</h2>
 <p>Hum collects no usage data, no crash reports, no event logs, no device identifiers. We do not know how often you record, when you record, or what you record. Hum's developer operates no servers that receive anything from you.</p>
+<h2>Optional: Live researcher (off by default)</h2>
+<p>If you switch on the Live researcher in Settings and add your own Anthropic API key, then while you record, short excerpts of the live transcript are sent to Anthropic (api.anthropic.com) using your key, so it can look up facts in real time. That is the one and only feature that sends any of your content off the device, it never runs unless you turn it on, and your audio itself is never sent — only recent transcript text. Anthropic's own privacy terms apply to those requests. Turn the feature off and Hum goes back to fully on-device.</p>
 <h2>No account. No email.</h2>
 <p>Hum has no sign-in, no profile, no account system. You don't tell us your name. You don't tell us your email. You don't tell us anything.</p>
-<h2>AI features (Minutes & Chat)</h2>
-<p>Minutes (structured notes) and Chat use Apple Intelligence Foundation Models, which run on-device on iPhone 15 Pro and newer with Apple Intelligence enabled. The transcript text is processed locally by the on-device model and the result is returned to Hum. Nothing leaves the phone.</p>
-<p>On older devices, these features surface an upgrade message — they are not silently routed to a cloud service.</p>
+<h2>AI features (Minutes &amp; chat)</h2>
+<p>Minutes and chat run on this device — using Apple Intelligence where it's available, or Hum's own downloadable model on devices with enough memory. The transcript text is processed locally and the result is returned to Hum. Nothing leaves the device.</p>
+<p>On devices that can't run them, these features say so — they are never silently routed to a cloud service.</p>
 <h2>Microphone permission</h2>
 <p>Hum asks for microphone access on first launch. iOS shows the standard permission prompt. If you decline, Hum cannot record — there is no fallback. Audio captured via the microphone is written to local storage only.</p>
 <h2>Subscription</h2>
 <p>Hum uses Apple's StoreKit for the subscription. Apple processes the payment and manages renewals — cancel anytime in Settings → Apple ID → Subscriptions. Hum never sees your card details, billing address, or Apple ID.</p>
 <h2>What we store, on this device only</h2>
 <p>Audio recordings (.caf and .m4a files), transcripts, summaries, folders, and embeddings used for search. Everything lives in the app's sandbox. Uninstalling Hum deletes all of it.</p>
-<h2>Sharing & exporting</h2>
+<h2>Sharing &amp; exporting</h2>
 <p>When you tap Share or Export, you choose what leaves the device. Markdown files, plain text, Obsidian links, and Drafts links are sent to the destination you pick. We do not send copies anywhere.</p>
 <h2>Accuracy — please read</h2>
 <p>Hum transcribes and summarises automatically. It is not perfect. Accuracy depends entirely on the audio: distance from the microphone, background noise, music, accents, people talking over each other, and recording quality all affect the result. Transcripts, Minutes, and chat answers may contain errors, misheard words, or missing content.</p>
@@ -34,8 +32,7 @@
 <h2>Children</h2>
 <p>Hum is suitable for any age. No data collection means no special children's policy is required.</p>
 <h2>Changes to this policy</h2>
-<p>If this policy changes, the new version will appear in the app under Settings → Read the full privacy policy in the next app update, and the change will be summarised in the App Store "What's New" notes.</p>
+<p>If this policy changes, the new version will appear here and in the app in the next update, and the change will be summarised in the App Store "What's New" notes.</p>
 <h2>Contact</h2>
-<p>Email questions to **privacy@hum.app**.</p>
-<p>---</p>
-<p>*Hum is built by Mandeep Sembi. Sibling to Lume. Same posture: replace the broken built-in apps with something that respects you.*</p><p class="foot">Hum: Voice Notes · © 2026 Mandeep Sembi</p></body></html>
+<p>Email questions to the developer at <a href="mailto:mandeepsembi@gmail.com">mandeepsembi@gmail.com</a>, or visit the <a href="support.html">Hum support page</a>.</p>
+<p class="foot">Hum: Voice Notes · © 2026 Mandeep Sembi</p></body></html>
